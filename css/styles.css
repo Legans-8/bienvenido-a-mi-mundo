@@ -259,7 +259,6 @@ h3 { font-size: 0.85rem; }
   gap: 40px;
   flex-wrap: wrap;
   position: relative;
-  overflow: hidden;
 }
 /* Avatar caminando sobre el borde superior del hero: ida y vuelta, con giro al volver */
 .hero-wrap { position: relative; }
@@ -769,9 +768,9 @@ h3 { font-size: 0.85rem; }
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
-  max-width: 280px;
+  max-width: 340px;
   min-width: 0;
-  z-index: 2;
+  z-index: 3;
 }
 /* Tinte del bocadillo según la emoción del avatar */
 .hero-bocadillo.boca-timidin { background: #ffe1ef; border-color: #c2185b; }
