@@ -253,7 +253,7 @@ h3 { font-size: 0.85rem; }
   border: 4px solid var(--border);
   margin-top: 32px;
   padding: 48px 32px;
-  min-height: 420px;
+  min-height: 470px;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -280,7 +280,7 @@ h3 { font-size: 0.85rem; }
 }
 /* El avatar va absoluto y anclado al fondo: crece sin alterar la altura del hero */
 .hero-text { flex: 1 1 320px; padding-right: 280px; position: relative; z-index: 1; }
-.hero-avatar { position: absolute; right: 52px; bottom: -40px; z-index: 1; }
+.hero-avatar { position: absolute; right: 52px; bottom: 0; z-index: 1; }
 /* Altura fija (no ancho): cada emoción tiene proporción distinta, así no cambia de escala */
 .hero-avatar .avatar-open { width: auto; height: 364px; }
 @media (max-width: 760px) {
