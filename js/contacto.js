@@ -2,7 +2,9 @@
 // Solo frontend: el envío se simula. Para producción, apuntar ENDPOINT a un
 // servicio tipo Formspree/FormSubmit que reenvíe al correo del creador.
 
-const ENDPOINT = null; // p. ej. 'https://formspree.io/f/XXXXXXXX'
+// FormSubmit (sin backend): token aleatorio en lugar del correo para no
+// exponerlo en el repo público. El correo destino se configuró al activar.
+const ENDPOINT = 'https://formsubmit.co/ajax/0094e09d6d4ad14bf36773a585e1abab';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('formContacto');
@@ -168,6 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
         nombre: campos.nombre.input.value.trim(),
         email: campos.email.input.value.trim(),
         mensaje: campos.mensaje.input.value.trim(),
+        _subject: 'Nuevo mensaje desde la web de Legans_8',
+        _template: 'table',
+        _replyto: campos.email.input.value.trim(),
       });
       if (!ok) throw new Error('fallo');
       estado.textContent = '¡LOGRO DESBLOQUEADO: PRIMER CONTACTO!';
