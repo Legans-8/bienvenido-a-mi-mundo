@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Legans_8 — Bienvenido a mi mundo</title>
+  <meta name="description" content="Catálogo de todos los videojuegos jugados por Legans_8 en sus directos de Twitch y videos de YouTube.">
+  <script>document.documentElement.dataset.theme = localStorage.getItem('legans8-theme') || 'dark';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=37">
+  <script defer src="js/data.js?v=5"></script>
+  <script defer src="js/app.js?v=26"></script>
+  <script defer src="js/home.js?v=7"></script>
+</head>
+<body data-page="inicio">
+  <main>
+    <div class="hero-wrap">
+    <img class="hero-walker" src="media/Gifs/walk.gif" alt="" aria-hidden="true">
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1>BIENVENIDO<br>AL CATÁLOGO</h1>
+        <p>Todos los juegos que he jugado y documentado en Twitch y YouTube, reunidos en un solo lugar: qué opiné, en qué quedaron y dónde ver el contenido.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="catalogo.html">VER CATÁLOGO</a>
+          <a class="btn btn-secondary" href="https://www.youtube.com/@legans_8" target="_blank" rel="noopener">ÚLTIMOS VIDEOS</a>
+        </div>
+      </div>
+      <div class="hero-avatar" id="heroAvatar"></div>
+    </section>
+    </div>
+
+    <section>
+      <div class="section-head">
+        <h2>JUEGOS RECIENTES</h2>
+        <a class="ver-todos" href="catalogo.html">VER TODOS</a>
+      </div>
+      <div class="grid" id="recientes"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>DESTACADOS</h2>
+        <a class="ver-todos" href="catalogo.html">VER TODOS</a>
+      </div>
+      <div class="grid" id="destacados"></div>
+    </section>
+
+    <section class="apoyo pixel-frame">
+      <div class="apoyo-texto-col">
+        <h2 class="apoyo-titulo">&#9654;&#9654; RECUERDA APOYARME &#9664;&#9664;</h2>
+        <p class="apoyo-texto">¿Quieres subir de nivel en esta comunidad? Apoyar el canal suscribiéndote en Twitch o enviando una donación es como darme un power-up en la vida real. No solo me ayudas a mejorar la calidad del contenido y a seguir expandiendo este catálogo de juegos, sino que también desbloqueas tu propio loot exclusivo: ¡emotes épicos y ventajas únicas para destacar en el chat! Mil gracias por ser parte de esta partida.</p>
+      </div>
+      <div class="apoyo-cta">
+        <div class="emote-fan" aria-label="Previsualización de 4 emotes desbloqueables">
+          <div class="emote-card"><img src="media/Emotes/Angry.png" alt="Emote de enojo"></div>
+          <div class="emote-card"><img src="media/Emotes/Heart.png" alt="Emote de corazón"></div>
+          <div class="emote-card"><img src="media/Emotes/interroagation.png" alt="Emote de confusión"></div>
+          <div class="emote-card"><img src="media/Emotes/Wave.png" alt="Emote de saludo"></div>
+        </div>
+        <a class="btn btn-primary apoyo-btn" href="https://www.twitch.tv/legans_8" target="_blank" rel="noopener">SUSCRÍBETE</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

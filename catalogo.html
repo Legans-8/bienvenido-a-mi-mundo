@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — Legans_8</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem('legans8-theme') || 'dark';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=37">
+  <script defer src="js/data.js?v=5"></script>
+  <script defer src="js/app.js?v=26"></script>
+  <script defer src="js/catalogo.js?v=5"></script>
+</head>
+<body data-page="catalogo">
+  <main>
+    <div class="page-intro">
+      <h1>CATÁLOGO</h1>
+      <p>Todos los juegos que han pasado por el canal. Busca, filtra y entra en la ficha para leer mi opinión y ver el contenido.</p>
+    </div>
+
+    <div class="toolbar pixel-frame">
+      <div class="search-wrap">
+        <input class="search-input" id="buscador" type="search" placeholder="Buscar juego..." autocomplete="off" aria-label="Buscar juego por nombre">
+        <div class="search-results" id="resultados" hidden></div>
+      </div>
+      <div class="filter-row">
+        <div>
+          <label for="fGenero">GÉNERO</label>
+          <select id="fGenero"><option value="">Todos</option></select>
+        </div>
+        <div>
+          <label for="fPlataforma">PLATAFORMA</label>
+          <select id="fPlataforma"><option value="">Todas</option></select>
+        </div>
+        <div>
+          <label for="fAnio">AÑO</label>
+          <select id="fAnio"><option value="">Todos</option></select>
+        </div>
+        <div>
+          <label for="fEstado">ESTADO</label>
+          <select id="fEstado"><option value="">Todos</option></select>
+        </div>
+        <div>
+          <label for="fOrden">ORDENAR POR</label>
+          <select id="fOrden">
+            <option value="recientes">Más recientes</option>
+            <option value="alfabetico">Alfabético</option>
+            <option value="popularidad">Popularidad</option>
+          </select>
+        </div>
+      </div>
+      <div class="chips" id="chips"></div>
+      <p class="result-count" id="contador"></p>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <div id="vacio"></div>
+  </main>
+</body>
+</html>

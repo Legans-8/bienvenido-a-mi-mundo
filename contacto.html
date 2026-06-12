@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — Legans_8</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem('legans8-theme') || 'dark';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=37">
+  <script defer src="js/data.js?v=5"></script>
+  <script defer src="js/app.js?v=26"></script>
+  <script defer src="js/contacto.js?v=9"></script>
+</head>
+<body data-page="contacto">
+  <main>
+    <div class="page-intro">
+      <h1>CONTACTO</h1>
+      <p>¿Una sugerencia, una recomendación de juego o un saludo? Escríbeme y el mensaje llega directo a mi correo.</p>
+    </div>
+
+    <div class="contacto-wrap">
+      <form class="form-contacto pixel-frame terminal" id="formContacto" novalidate>
+        <div class="term-bar">
+          <span class="term-luz"></span><span class="term-luz"></span><span class="term-luz"></span>
+          <span class="term-titulo">LEGANS_8.EXE &mdash; CANAL DIRECTO</span>
+        </div>
+        <p class="term-prompt">&gt; NUEVA TRANSMISI&Oacute;N<span class="type-cursor"></span></p>
+        <div class="field" id="campoNombre">
+          <label for="nombre">&gt; NOMBRE</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="jugador_1">
+          <p class="error-msg">Escribe tu nombre.</p>
+        </div>
+        <div class="field" id="campoEmail">
+          <label for="email">&gt; EMAIL</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="tu@correo.com">
+          <p class="error-msg">Escribe un email válido (ej. tu@correo.com).</p>
+        </div>
+        <div class="field" id="campoMensaje">
+          <label for="mensaje">&gt; MENSAJE</label>
+          <textarea id="mensaje" name="mensaje" placeholder="escribe aquí tu mensaje..."></textarea>
+          <p class="error-msg">El mensaje no puede estar vacío.</p>
+        </div>
+        <button class="btn btn-primary" type="submit" id="btnEnviar">ENVIAR MENSAJE</button>
+        <p class="form-status" id="estadoForm" role="status"></p>
+      </form>
+      <aside class="npc" aria-hidden="true">
+        <div class="npc-bocadillo" id="npcBocadillo">¡Escríbeme algo!</div>
+        <img class="npc-img" id="npcImg" src="media/ani forms/base 2.png" alt="">
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

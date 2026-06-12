@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canales — Legans_8</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem('legans8-theme') || 'dark';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=37">
+  <script defer src="js/data.js?v=5"></script>
+  <script defer src="js/app.js?v=26"></script>
+  <script defer src="js/mario.js?v=4"></script>
+</head>
+<body data-page="canales">
+  <main>
+    <div class="page-intro">
+      <h1>CANALES Y REDES</h1>
+      <p>Aquí vive el contenido: los directos, las series y la comunidad. Cada red tiene lo suyo — elige tu nivel.</p>
+    </div>
+    <div class="canales-grid" id="canales"></div>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('canales').innerHTML = SOCIALS.map(s => `
+        <a class="canal-card pixel-frame" href="${s.url}" target="_blank" rel="noopener">
+          <span class="canal-icon" style="background:${s.color}">${ICONS[s.id]}</span>
+          <span>
+            <h3>${s.nombre.toUpperCase()}</h3>
+            <p>${s.desc}</p>
+          </span>
+        </a>`).join('') + `
+        <div class="canal-card pixel-frame minijuego-card">
+          <canvas id="mario" tabindex="0" aria-label="Minijuego de plataformas estilo Mario Bros"></canvas>
+        </div>`;
+      initMario(document.getElementById('mario'));
+    });
+  </script>
+</body>
+</html>
