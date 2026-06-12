@@ -282,12 +282,13 @@ h3 { font-size: 0.85rem; }
 /* El avatar va absoluto y anclado al fondo: crece sin alterar la altura del hero */
 .hero-text { flex: 1 1 320px; padding-right: 280px; position: relative; z-index: 1; }
 .hero-avatar { position: absolute; right: 52px; bottom: -40px; z-index: 1; }
-.hero-avatar .avatar-open { width: 300px; }
+/* Altura fija (no ancho): cada emoción tiene proporción distinta, así no cambia de escala */
+.hero-avatar .avatar-open { width: auto; height: 364px; }
 @media (max-width: 760px) {
   .hero { flex-direction: column; align-items: stretch; }
   .hero-text { padding-right: 0; }
   .hero-avatar { position: static; align-self: center; }
-  .hero-avatar .avatar-open { width: 240px; }
+  .hero-avatar .avatar-open { height: 290px; }
 }
 
 /* Avatar con parpadeo: la versión de ojos cerrados se superpone y aparece a ratos */
@@ -772,6 +773,13 @@ h3 { font-size: 0.85rem; }
   min-width: 0;
   z-index: 2;
 }
+/* Tinte del bocadillo según la emoción del avatar */
+.hero-bocadillo.boca-timidin { background: #ffe1ef; border-color: #c2185b; }
+.hero-bocadillo.boca-timidin::before { border-top-color: #ffe1ef; }
+.hero-bocadillo.boca-timidin::after { border-top-color: #c2185b; }
+.hero-bocadillo.boca-angry { background: #ffdad4; border-color: #b3261e; }
+.hero-bocadillo.boca-angry::before { border-top-color: #ffdad4; }
+.hero-bocadillo.boca-angry::after { border-top-color: #b3261e; }
 .hero-bocadillo.pop { animation: boca-pop-hero 0.25s ease; }
 @keyframes boca-pop-hero {
   0% { transform: translateX(-50%) scale(0.85); }

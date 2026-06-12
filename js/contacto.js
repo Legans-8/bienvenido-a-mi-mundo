@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'AFK detectado... ¿hola?',
     'Tic, tac... esto no es un speedrun, pero casi',
     '¿Escribo yo por ti? Cobro en monedas',
-    ...CHARLA_GEEK,
+    ...CHARLA_GEEK.map(f => f.t),
   ];
   let charlaTimer = null, ultimaCharla = -1;
   function programarCharla() {
