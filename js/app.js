@@ -82,10 +82,20 @@ const CHARLA_GEEK = [
   { t: 'Ya casi nadie incluye manuales ilustrados como los de antes', e: 'sad' },
   { t: 'El amigo con el que rejugabas todo y con el que ya no hablas...', e: 'sad' },
   { t: 'Perder una partida de 80 horas por no guardar. Aún lo lloro', e: 'sad' },
-  // --- tímido / personal (timidin) — los datos personales se llenan después ---
+  // --- tímido / personal (timidin) ---
   { t: '¿Te... te quedas otro ratito conmigo? Porfa...', e: 'timidin' },
   { t: 'Me alegra un montón que estés por aquí... no se lo digas a nadie', e: 'timidin' },
   { t: 'A veces hablo de más cuando me pongo nervioso... jeje', e: 'timidin' },
+  { t: 'No se lo digas a nadie... pero Titanfall 2 es mi juego favorito de todos', e: 'timidin' },
+  { t: 'Eh... puede que le haya metido demasiadas horas al LoL... no juzgues', e: 'timidin' },
+  { t: 'Con Super Mario Bros 3 empezó todo para mí... qué nostalgia, jeje', e: 'timidin' },
+  { t: 'Titanfall 2 me marcó más de lo que admito... BT, esa campaña... ains', e: 'timidin' },
+  { t: 'Mi personaje favorito es Jax, de TADC... me identifico con eso de no saber expresar lo que siente', e: 'timidin' },
+  { t: 'Confieso: los tycoon no me llaman... pero si toco uno quedo pegado horas', e: 'timidin' },
+  { t: 'Halo es mi saga, y Halo Reach mi favorito... por Noble Team lo que sea', e: 'timidin' },
+  { t: 'Mi sueño es dedicarme a esto al 100% y darte un ratito para escapar de la rutina', e: 'timidin' },
+  { t: 'Un secreto... las visual novels me encantan, aunque casi no las stremee', e: 'timidin' },
+  { t: 'Vale, lo admito... si no carreo yo la partida de LoL, la victoria no sabe igual', e: 'timidin' },
 ];
 
 /* ---------- Iconos de redes (SVG, fill currentColor) ---------- */
